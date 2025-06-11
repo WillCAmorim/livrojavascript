@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap 04 - Ex 02</title>
+</head>
+<body>
+    <h1>Programa Cálculo do Peso Ideal</h1>
+    <form>
+        <p>
+            <label for="inNome">Nome: </label>
+            <input type="text" id="inNome">  
+        </p>
+        <p>
+            <label for="inMasculino">Masculino</label>
+            <input type="radio" name="sexo" id="inMasculino" required>
+
+            <label for="inFeminino">Feminino</label>
+            <input type="radio" name="sexo" id="inFeminino" required>
+        </p>
+        <p>
+            <label for="inAltura">Altura</label>
+            <input type="number" name="Altura" id="inAltura" required step="0.01" min="0">
+        </p>
+
+        <input type="submit" value="Calcular Peso Ideal">
+        <input type="Reset" value="Limpar Campos">
+    </form>
+            <h3></h3>
+            <script src="js/ex4_2.js"></script>
+</body>
+</html>

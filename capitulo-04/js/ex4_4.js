@@ -9,7 +9,7 @@ frm.addEventListener ("submit", (e) => {
       }
 
 
-resp.innerText = `Hora na França: ${fuso.toFixed(2)} Horas.(m)`
+resp.innerText = `Hora na França: ${fuso.toFixed(2)} Horas. (m)`
 
   e.preventDefault()
 })

@@ -9,9 +9,11 @@ frm.addEventListener ("submit", (e) => {
   const valor = Number(frm.inValor.value)
   
   if (valor < 1.00){
-    resp3.innerText = "Valor insuficiente"
+    alert("Valor Insuficiente (no mínimo, R$ 1.00)")
+    frm.inValor.focus()
+    return
   }
-
+  
   const trintaMin = (valor >= 1)
     let trocoTrinta = (valor % 1)
 

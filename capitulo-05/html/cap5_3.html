@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cap 05 - Ex 03</title>
+</head>
+<body>
+  <script>
+    let num                                 // LET foi utilizado pois pode ser alterada 
+                                            //e será acessada fora do bloco do..while
+                                            
+do {                                        //Cria laço de repetição (faça...)
+  num = Number (prompt("Número: "))         //Lê um número
+    if (num == 0 || isNaN(num)) {           // SE num = 0 ou é inválido
+      alert ("Digite um número válido")
+    }
+  } while (num == 0 || isNaN (num))         // ENQUANTO num = 0 ou inválido
+      let pares = `Pares entre 1 e ${num}:` //string que irá conter a resposta
+        for (let i = 2; i <= num; i = i + 2) {
+          pares = pares + i + ","
+        }
+        alert(pares)                        //Exibe lista dos números pares
+  </script> 
+</body>
+</html>
